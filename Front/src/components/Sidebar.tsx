@@ -8,7 +8,7 @@ import ReportIcon from "../assets/report.svg";
 import ReturnIcon from "../assets/return.svg";
 import SettingIcon from "../assets/setting.svg";
 import SupplierIcon from "../assets/supplier.svg";
-
+import FellowIcon from "../assets/Fellow.svg"
 const Sidebar: React.FC = () => {
     const [searchQuery, setSearchQuery] = useState("");
 
@@ -36,8 +36,10 @@ const Sidebar: React.FC = () => {
                 margin: "0 auto",
             }}
         >
-            <h2 className="text-3xl font-thin text-center mb-4">FELLOW</h2>
-            <form>
+            <div className="flex justify-center mt-2">
+                <img src={FellowIcon} alt={FellowIcon} className="w-36"/>
+            </div>
+            <form className="mt-6">
                 <div className="relative">
                     <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                         <svg
